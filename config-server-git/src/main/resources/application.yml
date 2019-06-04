@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-client
+    name: config-server-git
   cloud:
     config:
       server:
@@ -8,3 +8,10 @@ spring:
           uri: https://github.com/yiyutao/config-repo-demo
 server:
   port: 2004
+encrypt:
+  key: masteryi
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
